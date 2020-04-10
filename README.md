@@ -5,11 +5,14 @@ Written in Nodejs and deployed on heroku: https://pyramid-word-api.herokuapp.com
 # Request Format
 body format: { "string":"banana" }
 
-# Response format: true
+# Response format: 
+true
 
 # Examples:
 abbcccdddd" will return true; 
+
 "bbccc" will return false since no freq of 1 is present.
+
 "xyyy" will also return false since no char with freq 2 is present between freq 1 and 3.
 
 # Instructions
