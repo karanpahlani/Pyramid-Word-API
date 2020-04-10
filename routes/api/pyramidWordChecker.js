@@ -2,16 +2,23 @@ const express = require('express');
 const router = express.Router();
 const isPyramid = require('../../services/isPyramid');
 
-/**
- * @route        POST /api/uniqueEmailChecker/emails
- * @description  A web service that accepts http post request with a list of emails and returns in response the count of unique emails.
- * @access       public
- */
+
+// POST request:  /api/pyramidWordChecker/inputString
+// info: This API accepts strings and return true or false based on if word is pyramid. it returns message invalid input on empty strings. 
+ 
 router.post('/inputString', (req, res) => {
-  const inputString = req.body;
+  const {string}  = req.body;
+  
+  if (string === "") {
+    res.status(400).json({
+        msg: 'Invalid Input'
+      });
+    }
+
   let result = null;
   try {
-    result = isPyramid(inputString);
+    result = isPyramid(string);
+    
   } catch (err) {
     console.error(err.message);
     res.status(500).json({

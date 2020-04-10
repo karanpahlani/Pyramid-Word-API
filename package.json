@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "server": "nodemon server"
+    "server": "nodemon server",
+    "test": "NODE_ENV=test jest --forceExit ./tests",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false"
   },
   "author": "Karan Pahlani",
   "license": "ISC",
