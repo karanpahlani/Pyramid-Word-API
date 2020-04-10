@@ -1,0 +1,21 @@
+{
+  "name": "pyramid-word",
+  "version": "1.0.0",
+  "description": "API to check if a word is pyramid word or not.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "server": "nodemon server"
+  },
+  "author": "Karan Pahlani",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "jest": "^25.3.0",
+    "nodemon": "^2.0.3",
+    "supertest": "^4.0.2"
+  }
+}
