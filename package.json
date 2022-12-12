@@ -13,7 +13,7 @@
   "author": "Karan Pahlani",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.3"
   },
   "devDependencies": {
     "jest": "^25.3.0",
